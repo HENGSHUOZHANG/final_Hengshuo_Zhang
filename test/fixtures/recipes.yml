@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  ingredients: MyString
+  directions: MyText
+  time: 1
+  difficulty: MyString
+  output: 1
+  genre: MyString
+  cost: 9.99
+  chef_id: 1
+
+two:
+  title: MyString
+  ingredients: MyString
+  directions: MyText
+  time: 1
+  difficulty: MyString
+  output: 1
+  genre: MyString
+  cost: 9.99
+  chef_id: 1

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FinalHengshuoZhang</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="pink">
+  <h1 class="center">YUMMY TUMMY</h1>
+    <hr/>
+    <ul class="center" id="navlinks">
+      <li><%=link_to "Home", :controller => "visitor", :action => "index"%></li> 
+      <li><%=link_to "Easy Recipes", :controller => "visitor", :action => "easy"%></li>  
+      <li><%=link_to "Challenging Recipse", :controller => "visitor", :action => "difficult"%></li> 
+      <li><%=link_to "Cheap Recipes", :controller => "visitor", :action => "cheap"%></li> 
+    </ul>
+    <hr/>
+  </div>
+  <div id="wrapper">
+  <div class="boxed">
+    <p>New Feature! You can now search by Chef!</p>
+    <p><%= link_to "Chef Rachel's recipes", :controller => "visitor", :action => "chef_rachel"%></p>
+    <p><%= link_to "Chef Sandra's recipes", :controller => "visitor", :action => "chef_sandra"%></p>
+    <p><%= link_to "Chef Paula's recipes", :controller => "visitor", :action => "chef_paula"%></p>
+   </div>
+  
+   <div class = "positioning"> 
+     <%= yield %>
+  </div>
+</div>
+<div>  
+<table class="pink" id="tableBottom">
+  <hr/>
+  <tr>
+    <td>Contact</td>
+    <td>About</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

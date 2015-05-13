@@ -1,0 +1,9 @@
+<br>
+<h1>Recipes by chef <%= @chef.name %></h1>
+<% @chef_recipes_hash.each do |chef, recipes|%>
+  <% recipes.each do |recipe|%>
+  <h2><%= recipe.title%> by chef: <%= chef.name%></h2>
+  <p><%= sanitize(recipe.ingredients) %></p>
+  <p>Directions: <%= sanitize(recipe.directions) %></p>
+  <% end %>
+<% end %>
